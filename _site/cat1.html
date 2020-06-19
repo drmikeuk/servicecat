@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Prototype1 - Service Cat</title>
+  <link rel="stylesheet" href="/vendor/bootstrap-4.3.1.min.css">
+  <link rel="stylesheet" href="/vendor/fontawesome-5.8.1.min.css">
+  <link rel="stylesheet" href="/assets/style.css" media="screen" type="text/css">
+  <!-- add in  icons -->
+
+</head>
+
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+      
+      
+        
+        
+      <li class="nav-item active"><a class="nav-link" href="/cat1.html">Prototype1</a></li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+
+  <!-- Filters etc -->
+  <div class="row padrow">
+    <div class="filters">
+
+      <!-- Category:  Connect; Data; Devices; Research; Security; Software; Teaching; Help  -->
+      <div class="btn-group filter-button-group" data-filter-group="label" aria-label="Filter by category" >
+        <button type="button" class="btn btn-primary" data-filter="*">All</button>
+        
+        <button type="button" class="btn" data-filter=".Connect">Connect and communicate</button>
+        
+        <button type="button" class="btn" data-filter=".Data">Data storage</button>
+        
+        <button type="button" class="btn" data-filter=".Devices">Desktops and devices</button>
+        
+        <button type="button" class="btn" data-filter=".Research">Research support</button>
+        
+        <button type="button" class="btn" data-filter=".Security">Security</button>
+        
+        <button type="button" class="btn" data-filter=".Software">Software</button>
+        
+        <button type="button" class="btn" data-filter=".Teaching">Teaching and learning</button>
+        
+        <button type="button" class="btn" data-filter=".Help">Help and support</button>
+        
+
+      </div>
+
+      <!-- Audience: Undergraduates; Postgraduates; Researchers; Teachers; AllStaff -->
+      <div class="btn-group filter-button-group" data-filter-group="type" aria-label="Filter by type">
+        <button type="button" class="btn btn-primary" data-filter="*">All</button>
+        
+        <button type="button" class="btn" data-filter=".Undergraduates">Undergraduates</button>
+        
+        <button type="button" class="btn" data-filter=".Postgraduates">Postgraduates</button>
+        
+        <button type="button" class="btn" data-filter=".Researchers">Researchers</button>
+        
+        <button type="button" class="btn" data-filter=".Teachers">Teachers</button>
+        
+        <button type="button" class="btn" data-filter=".AllStaff">All staff</button>
+        
+      </div>
+
+      <input type="text" class="quicksearch" placeholder="Filter..." />
+
+      <!-- Count -->
+      <div class="filter-count"></div>
+
+    </div> <!-- end filters -->
+
+
+    <!--  Sort: Date then title; Title
+    <div class="btn-group sort-by-button-group" >
+      <button type="button" class="btn btn-primary" data-sort-by="year,title">Date</button>
+      <button type="button" class="btn " data-sort-by="title">Title</button>
+    </div>  -->
+
+    <!-- Reset
+    <div class="btn-group" >
+      <button type="button" class="btn btn-secondary button-reset"   ><i class="fas fa-redo-alt"></i></button>
+    </div>  -->
+
+
+  </div>
+
+
+  <!-- CARDS -->
+  <div class="grid clearfix">
+
+  <!--  Cards1: from collection (ie pages)
+        OMITTED -->
+
+  <!--  Cards2: from CSV file  <i class="fas fa-chevron-right"></i>  -->
+  
+    <div class="card Undergraduates Postgraduates Researchers Teachers AllStaff  Connect Lorum">
+      <a href="https://www.nottingham.ac.uk/it-services/connect/email/index.aspx">
+      <!-- <img src="/images/" class="card-img-top" alt="thumbnail">-->
+      <div class="card-body">
+        
+             <!-- Prototype/Example -->
+        
+        <h4 class="card-title">Email</h4>
+
+        
+          
+            <p class="category">Connect and communicate</p>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        <p class="card-text">All staff, students and postgraduates are entitled to a University email account.</p>
+
+      </div>
+      <!--
+      <div class="card-footer">
+        <p class="labels">
+          <!-- <span class="year float-right"></span> - ->
+          Undergraduates Postgraduates Researchers Teachers AllStaff <!-- Lorum - ->
+        </p>
+      </div>
+      -->
+      </a>
+    </div>
+  
+    <div class="card Undergraduates Postgraduates Researchers Teachers AllStaff  Connect Lorum; Ipsum; Label">
+      <a href="https://www.nottingham.ac.uk/it-services/connect/wifi/staff-students.aspx">
+      <!-- <img src="/images/" class="card-img-top" alt="thumbnail">-->
+      <div class="card-body">
+        
+             <!-- Prototype/Example -->
+        
+        <h4 class="card-title">Wi-Fi and wired internet</h4>
+
+        
+          
+            <p class="category">Connect and communicate</p>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        <p class="card-text">eduroam is the main wireless network for staff, associates and students.</p>
+
+      </div>
+      <!--
+      <div class="card-footer">
+        <p class="labels">
+          <!-- <span class="year float-right"></span> - ->
+          Undergraduates Postgraduates Researchers Teachers AllStaff <!-- Lorum; Ipsum; Label - ->
+        </p>
+      </div>
+      -->
+      </a>
+    </div>
+  
+    <div class="card Undergraduates Postgraduates Researchers Teachers AllStaff  Devices Lorum; Ipsum; Label">
+      <a href="https://www.nottingham.ac.uk/it-services/computers/print/print.aspx">
+      <!-- <img src="/images/" class="card-img-top" alt="thumbnail">-->
+      <div class="card-body">
+        
+             <!-- Prototype/Example -->
+        
+        <h4 class="card-title">Printing</h4>
+
+        
+          
+        
+          
+        
+          
+            <p class="category">Desktops and devices</p>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        <p class="card-text">The UoN Print Service is available in all libraries and most computer rooms.</p>
+
+      </div>
+      <!--
+      <div class="card-footer">
+        <p class="labels">
+          <!-- <span class="year float-right"></span> - ->
+          Undergraduates Postgraduates Researchers Teachers AllStaff <!-- Lorum; Ipsum; Label - ->
+        </p>
+      </div>
+      -->
+      </a>
+    </div>
+  
+    <div class="card Undergraduates Postgraduates Researchers Teachers AllStaff  Software Lorum; Ipsum; Label">
+      <a href="https://www.nottingham.ac.uk/it-services/software/office365.aspx">
+      <!-- <img src="/images/" class="card-img-top" alt="thumbnail">-->
+      <div class="card-body">
+        
+             <!-- Prototype/Example -->
+        
+        <h4 class="card-title">Office 365</h4>
+
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <p class="category">Software</p>
+          
+        
+          
+        
+          
+        
+
+        <p class="card-text">Office 365 suite of applications and productivity services for all staff and students.</p>
+
+      </div>
+      <!--
+      <div class="card-footer">
+        <p class="labels">
+          <!-- <span class="year float-right"></span> - ->
+          Undergraduates Postgraduates Researchers Teachers AllStaff <!-- Lorum; Ipsum; Label - ->
+        </p>
+      </div>
+      -->
+      </a>
+    </div>
+  
+    <div class="card Undergraduates Postgraduates Researchers Teachers AllStaff  Software Lorum; Ipsum; Label">
+      <a href="https://www.nottingham.ac.uk/it-services/software/software.aspx">
+      <!-- <img src="/images/" class="card-img-top" alt="thumbnail">-->
+      <div class="card-body">
+        
+             <!-- Prototype/Example -->
+        
+        <h4 class="card-title">Software</h4>
+
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <p class="category">Software</p>
+          
+        
+          
+        
+          
+        
+
+        <p class="card-text">A range of up-to-date software to support staff and students in their work, studies or research.</p>
+
+      </div>
+      <!--
+      <div class="card-footer">
+        <p class="labels">
+          <!-- <span class="year float-right"></span> - ->
+          Undergraduates Postgraduates Researchers Teachers AllStaff <!-- Lorum; Ipsum; Label - ->
+        </p>
+      </div>
+      -->
+      </a>
+    </div>
+  
+    <div class="card Undergraduates Postgraduates Researchers Teachers AllStaff  Connect Lorum; Ipsum; Label">
+      <a href="https://www.nottingham.ac.uk/it-services/connect/index.aspx">
+      <!-- <img src="/images/" class="card-img-top" alt="thumbnail">-->
+      <div class="card-body">
+        
+             <!-- Prototype/Example -->
+        
+        <h4 class="card-title">IT accounts and passwords</h4>
+
+        
+          
+            <p class="category">Connect and communicate</p>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        <p class="card-text">Key information about your IT account including how to access Wi-Fi, email, make calls and work remotely on and off campus.</p>
+
+      </div>
+      <!--
+      <div class="card-footer">
+        <p class="labels">
+          <!-- <span class="year float-right"></span> - ->
+          Undergraduates Postgraduates Researchers Teachers AllStaff <!-- Lorum; Ipsum; Label - ->
+        </p>
+      </div>
+      -->
+      </a>
+    </div>
+  
+    <div class="card Undergraduates Postgraduates Researchers Teachers AllStaff  Connect Lorum; Ipsum; Label">
+      <a href="https://www.nottingham.ac.uk/it-services/connect/working/index.aspx">
+      <!-- <img src="/images/" class="card-img-top" alt="thumbnail">-->
+      <div class="card-body">
+        
+             <!-- Prototype/Example -->
+        
+        <h4 class="card-title">Working off campus</h4>
+
+        
+          
+            <p class="category">Connect and communicate</p>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        <p class="card-text">Ways to access your University data, systems and applications remotely and when to use them.</p>
+
+      </div>
+      <!--
+      <div class="card-footer">
+        <p class="labels">
+          <!-- <span class="year float-right"></span> - ->
+          Undergraduates Postgraduates Researchers Teachers AllStaff <!-- Lorum; Ipsum; Label - ->
+        </p>
+      </div>
+      -->
+      </a>
+    </div>
+  
+    <div class="card Undergraduates Postgraduates Researchers Teachers AllStaff  Data Lorum; Ipsum; Label">
+      <a href="https://www.nottingham.ac.uk/it-services/software/filestore.aspx">
+      <!-- <img src="/images/" class="card-img-top" alt="thumbnail">-->
+      <div class="card-body">
+        
+             <!-- Prototype/Example -->
+        
+        <h4 class="card-title">Filestore</h4>
+
+        
+          
+        
+          
+            <p class="category">Data storage</p>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        <p class="card-text">The University offers file storage solutions for students, staff and researchers.</p>
+
+      </div>
+      <!--
+      <div class="card-footer">
+        <p class="labels">
+          <!-- <span class="year float-right"></span> - ->
+          Undergraduates Postgraduates Researchers Teachers AllStaff <!-- Lorum; Ipsum; Label - ->
+        </p>
+      </div>
+      -->
+      </a>
+    </div>
+  
+    <div class="card Undergraduates Postgraduates     Connect Lorum; Ipsum; Label">
+      <a href="https://www.nottingham.ac.uk/it-services/connect/apps/mynottingham.aspx">
+      <!-- <img src="/images/" class="card-img-top" alt="thumbnail">-->
+      <div class="card-body">
+        
+             <!-- Prototype/Example -->
+        
+        <h4 class="card-title">MyNottingham app</h4>
+
+        
+          
+            <p class="category">Connect and communicate</p>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        <p class="card-text">Access to timetables, maps, programme materials and guides,  all accessible through your phone, helping you make the most of your time at University</p>
+
+      </div>
+      <!--
+      <div class="card-footer">
+        <p class="labels">
+          <!-- <span class="year float-right"></span> - ->
+          Undergraduates Postgraduates    <!-- Lorum; Ipsum; Label - ->
+        </p>
+      </div>
+      -->
+      </a>
+    </div>
+  
+    <div class="card   Researchers  AllStaff  Research Lorum; Ipsum; Label">
+      <a href="https://www.nottingham.ac.uk/it-services/research/applications/ris.aspx">
+      <!-- <img src="/images/" class="card-img-top" alt="thumbnail">-->
+      <div class="card-body">
+        
+             <!-- Prototype/Example -->
+        
+        <h4 class="card-title">Research Information System (RIS)</h4>
+
+        
+          
+        
+          
+        
+          
+        
+          
+            <p class="category">Research support</p>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+
+        <p class="card-text">An easy-to-use web-based system designed to decrease the administrative burden of managing the research lifecycle.</p>
+
+      </div>
+      <!--
+      <div class="card-footer">
+        <p class="labels">
+          <!-- <span class="year float-right"></span> - ->
+            Researchers  AllStaff <!-- Lorum; Ipsum; Label - ->
+        </p>
+      </div>
+      -->
+      </a>
+    </div>
+  
+    <div class="card    Teachers AllStaff  Teaching Lorum; Ipsum; Label">
+      <a href="https://www.nottingham.ac.uk/it-services/connect/systems/campus-solutions.aspx">
+      <!-- <img src="/images/" class="card-img-top" alt="thumbnail">-->
+      <div class="card-body">
+        
+             <!-- Prototype/Example -->
+        
+        <h4 class="card-title">Campus Solutions</h4>
+
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <p class="category">Teaching and learning</p>
+          
+        
+          
+        
+
+        <p class="card-text">Campus Solutions is used by staff to administer student records. Students also use the system (MyNottingham website) to apply to the University and update their details.</p>
+
+      </div>
+      <!--
+      <div class="card-footer">
+        <p class="labels">
+          <!-- <span class="year float-right"></span> - ->
+             Teachers AllStaff <!-- Lorum; Ipsum; Label - ->
+        </p>
+      </div>
+      -->
+      </a>
+    </div>
+  
+    <div class="card     AllStaff  Software Lorum; Ipsum; Label">
+      <a href="https://www.nottingham.ac.uk/it-services/index.aspx">
+      <!-- <img src="/images/" class="card-img-top" alt="thumbnail">-->
+      <div class="card-body">
+        
+             <!-- Prototype/Example -->
+        
+        <h4 class="card-title">Business applications</h4>
+
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <p class="category">Software</p>
+          
+        
+          
+        
+          
+        
+
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed arcu sapien. Integer feugiat turpis eu elit gravida, eu imperdie mi fringilla.</p>
+
+      </div>
+      <!--
+      <div class="card-footer">
+        <p class="labels">
+          <!-- <span class="year float-right"></span> - ->
+              AllStaff <!-- Lorum; Ipsum; Label - ->
+        </p>
+      </div>
+      -->
+      </a>
+    </div>
+  
+
+
+  </div> <!-- end grid -->
+
+</div>
+
+
+<!-- FOOTER -->
+<div class="footer">
+<!--  <div class="container">
+    <p><a href="/about/"><i class="fas fa-info-circle" aria-hidden="true"></i> About the project</a></p>
+  </div>
+-->
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/vendor/jquery-3.3.1.slim.min.js "></script>
+<script src="/vendor/popper.min.js "></script>
+<script src="/vendor/bootstrap-4.3.1.min.js "></script>
+
+
+<!-- custom js -->
+
+<script src='/vendor/isotope.pkgd.min.js' type="text/javascript"></script>
+
+<script src='/assets/cat1.isotope.js' type="text/javascript"></script>
+
+
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74356418-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-xxx-x');
+</script>
+
+</body>
+</html>

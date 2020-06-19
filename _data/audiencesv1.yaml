@@ -1,0 +1,14 @@
+- Audience: Undergraduates
+  class: .Undergraduates
+
+- Audience: Postgraduates
+  class: .Postgraduates
+
+- Audience: Researchers
+  class: .Researchers
+
+- Audience: Teachers
+  class: .Teachers
+
+- Audience: All staff
+  class: .AllStaff

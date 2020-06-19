@@ -1,0 +1,164 @@
+/* my styles */
+
+
+/* need to add in some interesting fonts #F7F8F9*/
+
+
+
+body            {background: #fff; font-size: 1.2rem; margin-bottom: 2rem}
+.header         {background: #eee; }
+.footer         {/*background: #ccc;*/ padding: 3em 0 2em;  /* margin-top: 2em */}
+.banner         {background-image: url("/assets/code.jpg"); background-size: cover; min-height: 140px;}
+.bannerThin     {background-image: url("/assets/codeThin.jpg"); background-size: cover; min-height: 30px; margin-bottom: 10px}
+
+
+h2              {margin-top: 2rem}
+
+/* header (landing) */
+.site-heading    {color: white;  padding: 10px 0; position: relative;}
+.site-heading h1 {font-size: 3rem}
+.subheading      {font-size: 1.5rem}
+.subheading .fa-home {color: #ddd}
+
+.rightnav        {position: absolute; right: 0}
+.rightnav a      {color: #ddd;}
+.rightnav a:hover {color: white}
+
+/* header & nav (others) */
+.nav             {color: #999; font-size: 18px; padding-left: 15px; position: relative}
+.nav a           {color: #ddd;}
+.nav a:hover     {color: white}
+.item .nav .fa-home    { position: absolute; top: 5px; left: -40px}
+
+
+/* HOME */
+.home              {padding-top: 45px; padding-bottom: 1em}
+.home h2           {margin-top: 4rem; margin-bottom: 2rem}
+.footer .card      {background: #F7F8F9}
+.footer .card-footer  {background: #F7F8F9}
+
+/* tiles for main  areas */
+.tiles a           {color: black; text-align: center;}
+.tiles h2          {margin-top: 0.5rem; margin-bottom: 0.5rem}
+.tiles img          {display: block; margin:auto;}
+
+/* UX cards - list of pages */
+.lists .card        {width: 100%}
+.home ul           {padding-left: 20px}
+
+
+
+
+/* LANDING */
+/* filters above cards */
+.padrow         {margin-top: 10px}
+.filters        {margin-left: 10px}
+.btn-group      {margin-right: 1em; margin-bottom: 20px}
+.btn            {border: 1px solid rgba(0,0,0,.125); background-color: #F8F8F8 }
+.btn:active,
+.btn:hover,
+.btn:focus  {border-color: #ccc; background-color: #ccc; box-shadow: 0 0 0 0 }
+.btn-primary    {background-color: #343a40 }
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:focus  {border-color: #ccc; background-color: #343a40; box-shadow: 0 0 0 0 }
+.quicksearch    {margin-bottom: 20px; vertical-align: middle; border: 1px solid rgba(0,0,0,.125); padding: .375rem .75rem;  margin-right: 20px;}
+.filter-count   {margin-bottom: 20px; vertical-align: middle; display: inline; padding: .375rem .5rem}
+
+/* grid of cards */
+.gridXXX           {margin: 2rem 0; /*display: flex; flex-direction: row; justify-content: center;*/}
+.card           {width: 19rem; min-height: 12rem; margin-right: 2rem; margin-bottom: 2rem; float: left; font-size: 1rem; background-color: #F8F8F8; border-radius: 0}
+.card:hover     {background-color: #FFF}
+.card .icon     {float: right; font-size: 2rem; color: #ccc; padding-right: 0}
+.card-body      {padding: 0.75rem}
+.card-footer    {padding: 0.75rem; background-color: white; border-top: 0px}
+.card img       {height: 130px; object-fit: cover; border-bottom: 1px solid rgba(0,0,0,.125)}
+.card h4        {line-height: 110%; margin-bottom: 6px; font-weight: 400;}
+.card p         {line-height: 1.2rem}
+.card .category {color: #5D6D7E; font-size: 0.8rem; margin-bottom: 0.8rem}
+.card .labels   {color: #5D6D7E; font-size: 0.9rem; font-style: italic; margin-bottom: 0; /*border-top: 1px solid #ddd; padding-top: 4px*/}
+a, a:hover      {color: black; text-decoration: none}
+
+/* ??? revisit for when I then word then I
+.btn i          {padding-right: 0.5em}*/
+
+.big            {width: 39rem}
+.big img        {height: 225px;}
+.big .category  {display: none}
+
+/*
+.big .card-text {float: left}
+.big button     {float: right}
+*/
+
+
+/* PAGES */
+.page-heading         {position: relative;}
+.page-heading h1      {font-size: 3rem; margin-bottom: 4px}
+.page-heading i       {font-size: 3rem; color: #ccc; position: absolute; top: 5px; left: -70px}
+.page .labels         {color: #5D6D7E; font-size: 0.9rem; font-style: italic; margin-bottom: 2rem;}
+.page .year           {font-weight: bold}
+
+.flex-fill            {padding: 0.5rem}
+.flex-fill img        {max-height: 100%; width: auto;}
+
+img.float-right       {padding-left: 1rem; padding-bottom: 0.5rem}
+img.float-left        {padding-right: 1rem; padding-bottom: 0.5rem}
+.img-medium           {max-width: 300px;}
+
+.thead-dark th        {background: #2C3E50; color: white}
+.tableauto            {width: auto;  /* ie overide  bootstrap  100% */}
+
+.fa-exclamation-triangle {color: red}
+.fa-question-circle      {color: blue}
+
+blockquote            {padding-left: 4rem; position: relative; }
+blockquote::before    {font-family: 'Font Awesome 5 Free'; font-weight: 900; content: '\f10d'; /*quote left icon*/; font-size: 2rem; color: #ddd; position: absolute; top: -6px; left: 10px;}
+
+.quotesource          {display: block; font-style: italic; font-size: 80%;}
+.quotesource::before  {content: "\2014\00A0"; /* mdash; nbsp; */}
+
+i                     {padding-right: 5px}
+
+
+
+/*
+ * Font Awesome Free 5.8.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ Need to include /vendor/fontawesome-5.8.1.min.css too
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../vendor/fa-regular-400.eot");
+  src: url("../vendor/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../vendor/fa-regular-400.woff2") format("woff2"), url("../vendor/fa-regular-400.woff") format("woff"), url("../vendor/fa-regular-400.ttf") format("truetype"), url("../vendor/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("../vendor/fa-solid-900.eot");
+  src: url("../vendor/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../vendor/fa-solid-900.woff2") format("woff2"), url("../vendor/fa-solid-900.woff") format("woff"), url("../vendor/fa-solid-900.ttf") format("truetype"), url("../vendor/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
+
+  @font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url("../vendor/fa-brands-400.eot");
+    src: url("../vendor/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../vendor/fa-brands-400.woff2") format("woff2"), url("../vendor/fa-brands-400.woff") format("woff"), url("../vendor/fa-brands-400.ttf") format("truetype"), url("../vendor/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+    font-family: 'Font Awesome 5 Brands'; }
