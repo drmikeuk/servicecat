@@ -1,0 +1,109 @@
+---
+layout: landing
+title: ver1C
+nav: "yes"
+sortTitle: "3"
+strap: .
+customjs:
+  - /vendor/isotope.pkgd.min.js
+  - /assets/cat1.isotope.js
+---
+
+<style>
+  .card           {width: 28rem; min-height: 8rem;}
+  .card i         {color: #343a40; position: absolute; bottom: 9px; right: 9px}
+</style>
+
+<div class="container-fluid">
+
+  <!-- Filters etc -->
+  <div class="row padrow">
+    <div class="filters">
+
+      <!-- Category:  Connect; Data; Devices; Research; Security; Software; Teaching; Help  -->
+      <div class="btn-group filter-button-group" data-filter-group="label" aria-label="Filter by category" >
+        <button type="button" class="btn btn-primary" data-filter="*">All</button>
+        {% for category in site.data.categoriesv1 %}
+        <button type="button" class="btn" data-filter="{{ category.class }}">{{ category.displayName }}</button>
+        {% endfor %}
+
+      </div>
+
+      <!-- Audience: Undergraduates; Postgraduates; Researchers; Teachers; AllStaff -->
+      <div class="btn-group filter-button-group" data-filter-group="type" aria-label="Filter by type">
+        <button type="button" class="btn btn-primary" data-filter="*">All</button>
+        {% for audience in site.data.audiencesv1 %}
+        <button type="button" class="btn" data-filter="{{ audience.class }}">{{ audience.Audience }}</button>
+        {% endfor %}
+      </div>
+
+      <input type="text" class="quicksearch" placeholder="Filter..." />
+
+      <!-- Count -->
+      <div class="filter-count"></div>
+
+    </div> <!-- end filters -->
+
+
+    <!--  Sort: Date then title; Title
+    <div class="btn-group sort-by-button-group" >
+      <button type="button" class="btn btn-primary" data-sort-by="year,title">Date</button>
+      <button type="button" class="btn " data-sort-by="title">Title</button>
+    </div>  -->
+
+    <!-- Reset
+    <div class="btn-group" >
+      <button type="button" class="btn btn-secondary button-reset"   ><i class="fas fa-redo-alt"></i></button>
+    </div>  -->
+
+
+  </div>
+
+
+  <!-- CARDS -->
+  <div class="grid clearfix">
+
+  <!--  Cards1: from collection (ie pages)
+        OMITTED -->
+
+  <!--  Cards2: from CSV file  <i class="fas fa-chevron-right"></i>  -->
+  {% for card in site.data.cat1 %}
+    <div class="card {{ card.Audience }}  {{ card.Category }} {{ card.Labels }}">
+      <a href="{{card.url}}">
+      <!-- <img src="/images/{{card.Thumbnail}}" class="card-img-top" alt="thumbnail">-->
+      <div class="card-body">
+        {% case card.Type %}
+          {% when 'Live' %}
+             <i class="icon fas fa-heartbeat"></i>
+          {% when 'Info' %}
+             <i class="icon fas fa-info-circle"></i>
+          {% else %}
+             <!-- Prototype/Example -->
+        {% endcase %}
+        <h4 class="card-title" style="margin-bottom: 15px">{{ card.Title }}</h4>
+
+        {% for category in site.data.categoriesv1 %}
+          {% if category.category ==  card.Category %}
+            <!-- <p class="category">{{ category.displayName }}</p> -->
+          {% endif %}
+        {% endfor %}
+
+        <p class="card-text">{{ card.Blurb }}</p>
+        <i class="fas fa-chevron-circle-right  fa-2x"></i>
+      </div>
+      <!--
+      <div class="card-footer">
+        <p class="labels">
+          <!-- <span class="year float-right">{{card.Year}}</span> - ->
+          {{ card.Audience }} <!-- {{ card.Labels }} - ->
+        </p>
+      </div>
+      -->
+      </a>
+    </div>
+  {% endfor %}
+
+
+  </div> <!-- end grid -->
+
+</div>
