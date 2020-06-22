@@ -10,7 +10,7 @@ customjs:
 ---
 
 <style>
-  .card           {width: 28rem; min-height: 8rem;}
+  .card           {width: 27rem; min-height: 8rem;}
   .card i         {color: #343a40; position: absolute; bottom: 9px; right: 9px}
 </style>
 
@@ -88,7 +88,7 @@ customjs:
           {% endif %}
         {% endfor %}
 
-        <p class="card-text">{{ card.Blurb }}</p>
+        <p class="card-text">{{ card.Blurb | truncate: 90}}</p>
         <i class="fas fa-chevron-circle-right  fa-2x"></i>
       </div>
       <!--
