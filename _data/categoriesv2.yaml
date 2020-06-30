@@ -1,0 +1,31 @@
+- category: Connect
+  displayName: Connect and communicate
+  class: .Connect
+
+- category: Data
+  displayName: Data storage
+  class: .Data
+
+- category: Devices
+  displayName: Desktops and devices
+  class: .Devices
+
+- category:  Research
+  displayName: Research support
+  class: .Research
+
+- category: Security
+  displayName: Security
+  class: .Security
+
+- category: Software
+  displayName: Software
+  class: .Software
+
+- category: Teaching
+  displayName: Teaching and learning
+  class: .Teaching
+
+- category: Help
+  displayName: Help and support
+  class: .Help
